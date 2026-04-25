@@ -6,6 +6,7 @@ tsp-output/
 dist/
 
 # Test artifacts
+.cache/
 playwright-report/
 test-results/
 
