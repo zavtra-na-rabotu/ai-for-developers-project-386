@@ -33,6 +33,7 @@ model EventType {
   description: string;
 
   /** Duration of the event in minutes */
+  @minValue(1)
   duration: int32;
 }
 
@@ -41,6 +42,7 @@ model CreateEventTypeRequest {
   id: string;
   title: string;
   description: string;
+  @minValue(1)
   duration: int32;
 }
 
@@ -48,6 +50,7 @@ model CreateEventTypeRequest {
 model UpdateEventTypeRequest {
   title?: string;
   description?: string;
+  @minValue(1)
   duration?: int32;
 }
 
