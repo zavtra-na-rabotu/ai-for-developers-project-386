@@ -1,6 +1,12 @@
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/zavtra-na-rabotu/ai-for-developers-project-386/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/zavtra-na-rabotu/ai-for-developers-project-386/actions)
 
+## Deployment
+
+The application is deployed on Render:
+
+https://naberi-ai-for-developers-386.onrender.com
+
 ## Go backend
 
 The backend implementation lives in `backend/` and follows the TypeSpec contract from `main.tsp`.
