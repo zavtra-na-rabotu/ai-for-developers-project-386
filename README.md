@@ -24,3 +24,18 @@ go test ./...
 ```
 
 Booking availability is generated for the next 14 calendar days, including today. The default owner schedule is 09:00-18:00 in the server's local timezone, with possible start times every 30 minutes.
+
+## Test coverage
+
+Primary user scenarios are documented in `docs/test-scenarios.md`.
+
+Run the full local check:
+
+```sh
+npm run test:web:install
+npm test
+```
+
+The install command is needed once per local machine to download Chromium for Playwright. The full check compiles the TypeSpec contract, regenerates frontend API types, builds the web app, runs Go backend tests, and runs Playwright integration E2E tests against a real Go API and Vite frontend.
+
+Browser MCP setup for exploratory checks is documented in `docs/browser-mcp.md`.

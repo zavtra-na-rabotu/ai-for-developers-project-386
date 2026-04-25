@@ -5,6 +5,10 @@
 tsp-output/
 dist/
 
+# Test artifacts
+playwright-report/
+test-results/
+
 # Dependency directories
 node_modules/
 
